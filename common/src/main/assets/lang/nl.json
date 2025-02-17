@@ -374,6 +374,16 @@
                     "auto_download_voice_notes": {
                         "name": "Automatisch spraakberichten downloaden",
                         "description": "Download automatisch bij het spelen van spraakberichten"
+                    },
+                    "logging_options": {
+                        "name": "Opties voor Loggen",
+                        "description": "Instellingen voor Logging-toasts",
+                        "properties": {
+                            "logging": {
+                                "name": "Loggen",
+                                "description": "Toont toasts wanneer er media aan het downloaden is"
+                            }
+                        }
                     }
                 },
                 "description": "Snapchat-media downloaden"
