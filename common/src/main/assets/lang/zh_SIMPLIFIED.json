@@ -514,6 +514,20 @@
                     "auto_download_voice_notes": {
                         "description": "播放语音笔记时自动下载",
                         "name": "自动下载语音笔记"
+                    },
+                    "logging_options": {
+                        "properties": {
+                            "disappearing_rate": {
+                                "name": "消失率",
+                                "description": "设置 toast 的消失速度（以毫秒为单位）\n值必须介于 100 到 3000 之间"
+                            },
+                            "logging": {
+                                "name": "记录",
+                                "description": "下载媒体时显示 toast"
+                            }
+                        },
+                        "name": "记录选项",
+                        "description": "记录 Toast 设置"
                     }
                 },
                 "description": "下载 Snapchat 媒体"
