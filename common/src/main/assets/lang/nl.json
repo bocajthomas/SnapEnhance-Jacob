@@ -382,6 +382,10 @@
                             "logging": {
                                 "name": "Loggen",
                                 "description": "Toont toasts wanneer er media aan het downloaden is"
+                            },
+                            "disappearing_rate": {
+                                "name": "verdwijden snelheid",
+                                "description": "Stelt de snelheid van verdwijnen van toast in (in milliseconden)\nDe waarde moet tussen 100 en 3000 liggen"
                             }
                         }
                     }
@@ -797,7 +801,8 @@
                         "name": "Omzeil Videoduratie Restricties"
                     },
                     "video_playback_rate_slider": {
-                        "name": "Video Afspeelsnelheid Slider"
+                        "name": "Video Afspeelsnelheid Slider",
+                        "description": "Geeft een slider in opera context menu dat de video snelheid kan veranderen\nbericht: verandringen zijn alleen bij de subsequente videos"
                     },
                     "disable_snap_splitting": {
                         "description": "Zorgt ervoor dat Snaps niet in meerdere delen worden opgesplitst\nFoto's die je stuurt worden in videos veranderd",
@@ -866,7 +871,8 @@
                         "description": "Overschrijft de framerate van de camera aan de achterkant van het toestel"
                     },
                     "immersive_camera_preview": {
-                        "description": "Voorkomt dat Snapchat de Camera-preview bijsnijdt\nDit kan de camera laten flikkeren op sommige apparaten"
+                        "description": "Voorkomt dat Snapchat de Camera-preview bijsnijdt\nDit kan de camera laten flikkeren op sommige apparaten",
+                        "name": "immersief voorbeeld"
                     }
                 },
                 "name": "Camera",
@@ -1076,7 +1082,7 @@
                         "description": "Spooft de afkomst van een vriendschapsverzoek"
                     },
                     "story_logger": {
-                        "name": "Story Logger",
+                        "name": "verhaal Logger",
                         "description": "Voorziet een geschiedenis voor verhalen van je vrienden"
                     },
                     "context_menu_fix": {
