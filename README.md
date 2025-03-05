@@ -230,8 +230,7 @@ Thanks to everyone involved
 
 **Translations:**
 - Bengali - [suryadip2008](https://github.com/suryadip2008)
-- Dutch - [BogusMosquito77](https://github.com/BogusMosquito7), [dnlweijers](https://github.com/dnlweijers),
-  [appelmoesgg](https://github.com/appelmoesgg)
+- Dutch - [BogusMosquito77](https://github.com/BogusMosquito7), [dnlweijers](https://github.com/dnlweijers), [appelmoesgg](https://github.com/appelmoesgg), [woutvanw](https://github.com/woutvanw)
 - Urdu - [Beingzain](https://github.com/Beingzain)
 - Danish - [comradekingu](https://github.com/comradekingu), [MHaaning](https://github.com/MHaaning)
 - Japanese - [scrodingerspet](https://github.com/schrodingerspet)
