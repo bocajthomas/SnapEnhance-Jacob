@@ -37,7 +37,8 @@
             "edit_theme": "Muokkaa Teemaa",
             "manage_repos": "Hallinnoi arkistoja",
             "file_imports": "Tiedostojen Tuonti",
-            "better_location": "Tarkempi Sijainti"
+            "better_location": "Tarkempi Sijainti",
+            "manage_rule_feature": "Hallinnoi sääntöä -ominaisuus"
         },
         "sections": {
             "features": {
@@ -48,7 +49,10 @@
                 "saved_config_snackbar": "Config tallennettu",
                 "config_import_failure_toast": "Configin tuonti epäonnistui {error}",
                 "config_import_success_toast": "Config tuotu onnistuneesti",
-                "config_export_success_toast": "Config viety onnistuneesti"
+                "config_export_success_toast": "Config viety onnistuneesti",
+                "config_export_failure_toast": "Kokoonpanon vienti epäonnistui {error}",
+                "newer_required": "Tämä ominaisuus vaatii Snapchatin v{version} tai uudemman toimiakseen oikein",
+                "older_required": "Tämä ominaisuus vaatii Snapchatin v{version} tai vanhemman toimiakseen oikein"
             },
             "social": {
                 "streaks_expiration_short": "{Tunnit}h",
@@ -80,7 +84,7 @@
                 "update_button": "Lataa",
                 "debug_build_summary_date": "Kasattu: {date} ({days} days ago)",
                 "debug_build_summary_content": "Versio {versionName} ({versionCode})",
-                "version_title": "V{versionName} · Forked by Jacob.",
+                "version_title": "V{versionName} · haarana bocajthomasilta",
                 "debug_build_summary_title": "Käytössäsi on SE Extendedin Debug versio",
                 "quick_actions_title": "Nopeat toiminnot"
             },
@@ -105,7 +109,8 @@
                 "streaks_length_text": "Pituus: {length}",
                 "streaks_expiration_text": "Vanhentuu {eta}",
                 "e2ee_title": "Päästä päähän salaus",
-                "participants_text": "{count} osallistujat"
+                "participants_text": "{count} osallistujat",
+                "notes_placeholder": "Lisää muistiinpano napsauttamalla"
             },
             "logged_stories": {
                 "story_failed_to_load": "Epäonnistui lataamaan",
@@ -167,6 +172,18 @@
                 "file_not_found": "Tiedostoa ei löytynyt",
                 "file_import_failed": "Tiedoston tuonti epäonnistui: {error}",
                 "file_imported": "Tiedoston tuonti onnistui"
+            },
+            "manage_rule_feature": {
+                "disable_state_option": "Poistettu käytöstä",
+                "disable_state_subtext": "Ei vaikuta ystäviin/ryhmiin",
+                "whitelist_state_subtext": "Tämä sääntö vaikuttaa vain {count} ystävään/ryhmään",
+                "whitelist_state_button": "Valitse sallitut ystävät/ryhmät",
+                "clear_list_button": "Tyhjennä ystävä-/ryhmäluettelo",
+                "blacklist_state_option": "Kaikki paitsi...",
+                "dialog_clear_confirmation_text": "Oletko varma, että haluat tyhjentää luettelon?",
+                "whitelist_state_option": "Kukaan paitsi...",
+                "blacklist_state_subtext": "Tämä sääntö vaikuttaa kaikkiin paitsi {count} ystävään/ryhmään",
+                "blacklist_state_button": "Valitse poissuljetut ystävät/ryhmät"
             }
         },
         "dialogs": {
@@ -195,7 +212,8 @@
                 "content": "Haluatko viedä configuraation arkaluontoisilla tiedoilla? (Kuten sijaintikoordinaatit jne.)"
             },
             "file_imports": {
-                "settings_select_file_hint": "Valitse tuotu tiedosto"
+                "settings_select_file_hint": "Valitse tuotu tiedosto",
+                "no_files_settings_hint": "Tiedostoja ei löytynyt. Varmista, että olet tuonut tarvittavat tiedostot Tiedostojen tuonnit -osiossa"
             }
         }
     },
@@ -353,6 +371,20 @@
                     "opera_download_button": {
                         "description": "Lisää latauspainike oikeaan yläkulmaan Snappia katsoessa\nPitkä painallus napeista pakottaa latauksen",
                         "name": "Opera Lataus Painike"
+                    },
+                    "auto_download_voice_notes": {
+                        "name": "Äänimuistiinpanojen automaattinen lataus",
+                        "description": "Lataa äänimuistiinpanot automaattisesti toistettaessa niitä"
+                    },
+                    "logging_options": {
+                        "description": "Toast-asetusten kirjaaminen",
+                        "properties": {
+                            "logging": {
+                                "name": "Kirjaaminen",
+                                "description": "Näyttää maljat, kun mediaa ladataan"
+                            }
+                        },
+                        "name": "Kirjausvaihtoehdot"
                     }
                 }
             },
@@ -385,6 +417,10 @@
                             "home_tab": {
                                 "name": "Koti-välilehti",
                                 "description": "Valitse välilehti mikä aukeaa Snapchatin käynnistyessä"
+                            },
+                            "simple_snapchat": {
+                                "name": "Yksinkertainen Snapchat",
+                                "description": "Ottaa käyttöön Snapchatin yksinkertaistetun version"
                             }
                         }
                     },
@@ -449,10 +485,32 @@
                         "description": "Tuo takaisin Bitmoji-selfiet vanhemmista Snapchat-versioista"
                     },
                     "auto_close_friend_feed_menu": {
-                        "name": "Sulje kaverisyötevalikko automaattisesti"
+                        "name": "Sulje kaverisyötevalikko automaattisesti",
+                        "description": "Sulkee automaattisesti Ystäväsyötevalikon asetuspainikkeen painamisen jälkeen"
                     },
                     "stealth_mode_indicator": {
-                        "description": "Lisää 👻-emojin Stealth modessa käytyjen keskustelujen viereen"
+                        "description": "Lisää 👻-emojin Stealth modessa käytyjen keskustelujen viereen",
+                        "name": "Hiljaisuus-tilan ilmaisin"
+                    },
+                    "icon_style": {
+                        "name": "Kuvakkeen tyyli",
+                        "description": "Muuttaa materiaalikuvakkeiden tyyliä\n\nTuetut ominaisuudet:\n - Opera latauspainike\n - Merkitse Snap nähdyksi -painike\n - Ystävän syötteen valikkopainikkeet\n - COF-kokeet\n - Viestin ilmaisimet\n - Kirjaaminen"
+                    },
+                    "custom_friend_feed_label": {
+                        "name": "Muokattu ystäväsyötteen nimiö",
+                        "description": "Muuttaa sivun nimiön ystäväsyötteellä"
+                    },
+                    "vertical_story_viewer": {
+                        "name": "Pystysuuntainen tarinakatselin",
+                        "description": "Ottaa pystysuuntainen tarinakatselimen käyttöön kaikissa tarinoissa"
+                    },
+                    "message_indicators": {
+                        "name": "Viesti-ilmaisimet",
+                        "description": "Lisää viesteihin erityisiä ilmaisinkuvakkeita\nHuomautus: Ilmaisimet eivät ehkä ole täysin tarkkoja"
+                    },
+                    "hide_quick_add_suggestions": {
+                        "name": "Piilota Ehdotusten pikalisäys",
+                        "description": "Poistaa ystävien ehdotusten pikalisäys"
                     }
                 }
             },
@@ -489,25 +547,48 @@
                         "description": "Antaa enemmän tietoja vastaanotetuissa ilmoituksissa",
                         "properties": {
                             "media_preview": {
-                                "name": "Median esikatselu"
+                                "name": "Median esikatselu",
+                                "description": "Näyttää esikatselun valituista mediatyypeistä ilmoituksessa"
                             },
                             "smart_replies": {
-                                "name": "Älykkäät vastaukset"
+                                "name": "Älykkäät vastaukset",
+                                "description": "Lisää ehdotetut vastaukset ilmoituksiin (Android 10+). Käytä yhdessä Vastaa-painikkeen kanssa"
                             },
                             "group_notifications": {
-                                "name": "Ryhmän ilmoitukset"
+                                "name": "Ryhmän ilmoitukset",
+                                "description": "Ryhmitä ilmoitukset yhdeksi ilmoitukseksi"
                             },
                             "chat_preview": {
-                                "name": "Chatin esikatselu"
+                                "name": "Chatin esikatselu",
+                                "description": "Näyttää esikatselun vastaanotetuista viesteistä ilmoituksessa"
                             },
                             "download_button": {
-                                "name": "Lataa-painike"
+                                "name": "Lataa-painike",
+                                "description": "Mahdollistaa median lataamisen ilmoituksesta"
                             },
                             "reply_button": {
-                                "name": "Vastaa-painike"
+                                "name": "Vastaa-painike",
+                                "description": "Lisää ilmoitukseen vastauspainike"
                             },
                             "media_caption": {
-                                "name": "Median kuvateksti"
+                                "name": "Median kuvateksti",
+                                "description": "Näyttää liitteenä olevan median Captionin ilmoituksessa"
+                            },
+                            "mark_as_read_button": {
+                                "description": "Mahdollistaa viestin merkitsemisen ilmoituksesta luetuksi",
+                                "name": "Merkitse luetuksi -painike"
+                            },
+                            "stacked_media_messages": {
+                                "name": "Pinotut mediaviestit",
+                                "description": "Yhdistää useita mediaviestejä yhdeksi teksti-ilmoitukseksi, kun niitä ei voi esikatsella. Käytä yhdessä Pikakeskustelun esikatselun kanssa"
+                            },
+                            "friend_add_source": {
+                                "description": "Näyttää ystäväpyynnön lähteen ilmoituksessa",
+                                "name": "Ystävänlisäyslähde"
+                            },
+                            "mark_as_read_and_save_in_chat": {
+                                "description": "Lisää ilmoitukseen Merkitsee luetuksi ja tallenna pikakeskusteluun -painikkeen",
+                                "name": "Merkitse luetuksi ja tallenna Pikakeskustelussa"
                             }
                         }
                     },
@@ -524,6 +605,10 @@
                             },
                             "message_filter": {
                                 "name": "Viestisuodatin"
+                            },
+                            "keep_my_own_messages": {
+                                "name": "Säilytä omat viestini",
+                                "description": "Estää omien viestiesi poistamisen"
                             }
                         }
                     },
@@ -556,17 +641,38 @@
                         "description": "Merkitsee viestit/napsautukset automaattisesti luetuiksi, vaikka Stealth Mode olisi käytössä"
                     },
                     "skip_when_marking_as_seen": {
-                        "name": "Ohita, kun merkitset nähdyksi"
+                        "name": "Ohita, kun merkitset nähdyksi",
+                        "description": "Siirtyy automaattisesti seuraavaan Snapiin, kun merkitset Snapin nähdyksi.\nKäytä yhdessä Merkitse Snap nähdyksi -painikkeen kanssa"
                     },
                     "half_swipe_notifier": {
                         "properties": {
                             "min_duration": {
-                                "name": "Minimikesto"
+                                "name": "Minimikesto",
+                                "description": "Yhtäkkiä liittymisen vähimmäiskesto (sekunteina)"
                             },
                             "max_duration": {
-                                "name": "Enimmäiskesto"
+                                "name": "Enimmäiskesto",
+                                "description": "Yhtäkkiä liittymisen enimmäiskesto (sekunteina)"
                             }
-                        }
+                        },
+                        "description": "Ilmoittaa, kun joku yhtäkkiä liittyy keskusteluun",
+                        "name": "Yhtäkkiä liittyminen -ilmoitus"
+                    },
+                    "loop_media_playback": {
+                        "description": "Toistaa mediaa silmukassa katsellessasi Snapsia/tarinoita",
+                        "name": "Median silmukkatoisto"
+                    },
+                    "call_start_confirmation": {
+                        "name": "Puhelun alkamisen vahvistus",
+                        "description": "Näyttää vahvistusikkunan puhelua aloitettaessa"
+                    },
+                    "friend_mutation_notifier": {
+                        "name": "Ystävän mykistys -ilmoitus",
+                        "description": "Ilmoittaa, kun jotain muuttuu ystävän profiilissa"
+                    },
+                    "unlimited_conversation_pinning": {
+                        "name": "Rajoittamaton keskustelukiinnittäminen",
+                        "description": "Mahdollistaa rajattoman määrän keskusteluja paikallisesti kiinnittämisen"
                     }
                 }
             },
@@ -1035,7 +1141,7 @@
             "description": "Puhdistaa Snapchatin Välimuistin"
         },
         "security_features": {
-            "description": "Käytä suojausominaisuuksia",
+            "description": "Muuta turvaominaisuuksien asetuksia",
             "name": "Suojausominaisuudet"
         },
         "theming": {
@@ -1053,6 +1159,10 @@
         "logger_history": {
             "description": "Tarkastele kirjattujen viestien historiaa",
             "name": "Kirjaajan historia"
+        },
+        "disclaimer_statement": {
+            "name": "Vastuuvapauslauseke",
+            "description": "Lue vastuuvapauslauseke"
         }
     },
     "material3_strings": {
