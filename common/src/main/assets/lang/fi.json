@@ -601,10 +601,12 @@
                         "description": "Estää viestien poistamisen",
                         "properties": {
                             "auto_purge": {
-                                "name": "Automaattinen puhdistus"
+                                "name": "Automaattinen puhdistus",
+                                "description": "Poistaa automaattisesti välimuistissa olevat viestit, jotka ovat vanhempia kuin määritetty aika"
                             },
                             "message_filter": {
-                                "name": "Viestisuodatin"
+                                "name": "Viestisuodatin",
+                                "description": "Valitse, mitkä viestit kirjataan (tyhjä kattaa kaikki viestit)"
                             },
                             "keep_my_own_messages": {
                                 "name": "Säilytä omat viestini",
