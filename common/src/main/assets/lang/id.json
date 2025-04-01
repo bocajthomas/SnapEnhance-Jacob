@@ -25,7 +25,34 @@
             "home_settings": "Pengaturan",
             "home_logs": "Log",
             "social": "Sosial",
-            "scripts": "Skrip"
+            "scripts": "Skrip",
+            "manage_rule_feature": "Kelola Aturan Fitur",
+            "file_imports": "Impor File",
+            "messaging_preview": "Pratinjau",
+            "manage_repos": "Kelola Repositori",
+            "tasks": "Tugas",
+            "logger_history": "Histori Logger",
+            "friend_tracker": "Pelacak Teman",
+            "manage_scope": "Kelola Scope",
+            "better_location": "Lokasi Lebih Baik",
+            "theming": "Penentuan Tema",
+            "edit_theme": "Edit Tema",
+            "edit_rule": "Aturan Edit"
+        },
+        "sections": {
+            "home": {
+                "version_title": "V{versionName] · Dicabangkan oleh bocajthomas",
+                "update_title": "Pembaruan SE Extended",
+                "update_content": "Versi {version} tersedia!",
+                "update_button": "Unduh",
+                "debug_build_summary_title": "Kamu menjalankan build debug dari SE Extended",
+                "debug_build_summary_content": "Versi {versionName} ({versionCode})",
+                "debug_build_summary_date": "Tanggal Pembuatan: {date} ({days} days ago)"
+            }
         }
+    },
+    "scopes": {
+        "friend": "Teman",
+        "group": "Grup"
     }
 }
