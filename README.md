@@ -1,24 +1,24 @@
- <div align="center">
+<div align="center">
   <img src="https://raw.githubusercontent.com/bocajthomas/SE-Extended/dev/images/logo/SE%20Extended%20Logo.png" height="240" />
 
 [![Debug CI](https://github.com/bocajthomas/SE-Extended/actions/workflows/debug.yml/badge.svg)](https://github.com/bocajthomas/SE-Extended/actions/workflows/debug.yml) [![Translation status](https://hosted.weblate.org/widget/se-extended/se-extended/svg-badge.svg)](https://hosted.weblate.org/engage/se-extended/)
 
 # SE Extended
-SE Extended is a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#use-someone-elses-project-as-a-starting-point-for-your-own-idea) from the [SnapEnhance app](https://github.com/rhunk/SnapEnhance) that uses the Xposed Framework to enhance your Snapchat experience. <br/><br/>
+SE Extended is a [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#use-someone-elses-project-as-a-starting-point-for-your-own-idea) from [SnapEnhance](https://github.com/rhunk/SnapEnhance) that uses the Xposed Framework to enhance your Snapchat experience. <br/><br/>
 
 Please note that this project is currently in development, So bugs and crashes may occur. If you encounter any issues, we encourage you to report them. To do this simply visit our [issues](https://github.com/bocajthomas/SE-Extended/issues/new?assignees=&labels=bug&projects=&template=bug_report.yml&title=...) page and create an issue, make sure to follow the guidelines.
 </div>
 
 ## 📱 Screenshots
 <div align="center">
-<div>
-<img src="images/screenshots/Screenshot-1.jpg" width="30%" />
-<img src="images/screenshots/Screenshot-2.jpg" width="30%" />
-<img src="images/screenshots/Screenshot-3.jpg" width="30%" />
-<img src="images/screenshots/Screenshot-4.jpg" width="30%" />
-<img src="images/screenshots/Screenshot-6.jpg" width="30%" />
-<img src="images/screenshots/Screenshot-7.jpg" width="30%" />
-</div>
+ <div>
+  <img src="images/screenshots/Screenshot-1.jpg" width="30%"/>
+  <img src="images/screenshots/Screenshot-2.jpg" width="30%"/>
+  <img src="images/screenshots/Screenshot-3.jpg" width="30%"/>
+  <img src="images/screenshots/Screenshot-4.jpg" width="30%"/>
+  <img src="images/screenshots/Screenshot-6.jpg" width="30%"/>
+  <img src="images/screenshots/Screenshot-7.jpg" width="30%"/>
+ </div>
 </div>
 
 ## 📖 Main Features
@@ -187,7 +187,7 @@ Please note that this project is currently in development, So bugs and crashes m
 </details>
 
 <details closed>
-<summary>📄 Scripting</summary>
+ <summary>📄 Scripting</summary>
 
 - `Developer Mode`
 - `Module Folder`
@@ -198,7 +198,8 @@ Please note that this project is currently in development, So bugs and crashes m
 </details>
 
 <details closed>
-<summary>👥 Friend Tracker</summary>
+ <summary>👥 Friend
+  Tracker</summary>
 
 - `Record Messaging Events`
 - `Allow Running In Background`
@@ -216,7 +217,7 @@ Join our [Telegram Channel](https://t.me/SE_Extended) for Discussions, announcem
 
 ## 💵 Donate
 SE Extended will always be free and open source for everyone,
-Please Consider [Donating](https://ko-fi.com/seextended)
+Please consider [donating](https://ko-fi.com/seextended)
 
 ## 🤝 Contributing
 Contributions are welcome!<br/>
